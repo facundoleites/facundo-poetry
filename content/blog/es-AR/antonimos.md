@@ -1,5 +1,5 @@
 ---
-title: "Antónimos"
+title: Antónimos
 date: "2018-12-08"
 lang: "es"
 ---
