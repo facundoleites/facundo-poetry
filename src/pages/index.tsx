@@ -43,14 +43,12 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>{post.frontmatter.date}</small>
                 </header>
-                <section style={{ minHeight: "100vh" }}>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.html,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
+                <section
+                  style={{ minHeight: "100vh" }}
+                  dangerouslySetInnerHTML={{
+                    __html: post.html,
+                  }}
+                ></section>
               </article>
             </li>
           )
