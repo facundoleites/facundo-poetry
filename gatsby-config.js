@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Facundo Leites Poetry`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Facundo Leites`,
+      summary: `argentino, vegetariano, artista digital y programador en el tiempo libre`,
+      summary_pt: `argentino, vegetariano, artista digital e programador nas horas vagas`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `facundoleites`,
     },
   },
   plugins: [
@@ -99,6 +100,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      lang
                     }
                   }
                 }

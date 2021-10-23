@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <Bio />
+          <Bio lang={post.frontmatter.lang} />
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -83,8 +83,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         description
+        lang
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

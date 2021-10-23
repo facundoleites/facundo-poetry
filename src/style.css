@@ -302,6 +302,16 @@ a:focus {
   border-radius: 100%;
 }
 
+.blog-post {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post > section {
+  flex: 1;
+}
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
