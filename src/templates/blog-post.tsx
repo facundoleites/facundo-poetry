@@ -22,19 +22,20 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <h1 className="font-bold text-3xl" itemProp="headline">
+            {post.frontmatter.title}
+          </h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
+        <footer className="mt-4">
           <Bio lang={post.frontmatter.lang} />
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className="py-4 mt-2 text-gray-500 dark:text-gray-300">
         <ul
           style={{
             display: `flex`,

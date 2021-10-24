@@ -6,30 +6,16 @@ export const LangNavItem: React.FC<PropsWithChildren<{ to: string }>> = ({
   children,
 }) => {
   return (
-    <Link
-      to={to}
-      style={{
-        display: "block",
-        paddingRight: "1rem",
-        textDecoration: "none",
-      }}
-    >
+    <Link to={to} className="block mr-2 hover:underline">
       {children}
     </Link>
   )
 }
 export const LangNav = () => {
   return (
-    <div style={{ display: "flex" }}>
+    <div className="flex text-xl">
       <LangNavItem to="/es-AR">Español</LangNavItem>
-      <span
-        style={{
-          display: "block",
-          paddingRight: "1rem",
-        }}
-      >
-        /
-      </span>
+      <span className="block mr-2">/</span>
       <LangNavItem to="/pt-BR">Portugês</LangNavItem>
     </div>
   )

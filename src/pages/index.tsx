@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h2 className="text-lg font-bold">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
@@ -44,11 +44,11 @@ const BlogIndex = ({ data, location }) => {
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section
-                  style={{ minHeight: "100vh" }}
+                  className="min-h-screen"
                   dangerouslySetInnerHTML={{
                     __html: post.html,
                   }}
-                ></section>
+                />
               </article>
             </li>
           )

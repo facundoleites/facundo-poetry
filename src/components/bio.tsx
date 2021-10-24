@@ -31,15 +31,9 @@ const Bio: React.FC<{ lang: "es" | "pt" }> = ({ lang }) => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div
-      className="bio"
-      style={{
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+    <div className="bio flex items-center py-8 text-gray-600 dark:text-gray-400">
       <StaticImage
-        className="bio-avatar"
+        className="rounded-full"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile.jpg"
@@ -49,7 +43,7 @@ const Bio: React.FC<{ lang: "es" | "pt" }> = ({ lang }) => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
+        <p className="ml-4">
           por <strong>{author.name}</strong>{" "}
           {lang === "es" ? author?.summary || null : author?.summary_pt || null}
         </p>

@@ -11,4 +11,4 @@ te va a amar como yo\
 y el dolor\
 interminable\
 de saber que no\
-voy a ser tu mejor compañero\
+voy a ser tu mejor compañero
