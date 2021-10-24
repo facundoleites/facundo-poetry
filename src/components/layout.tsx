@@ -25,7 +25,10 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="container mx-auto" data-is-root-path={isRootPath}>
+    <div
+      className="container mx-auto px-2 md:px-0"
+      data-is-root-path={isRootPath}
+    >
       <header className="py-4">
         {header}
         <LangNav />
