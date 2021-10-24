@@ -41,16 +41,22 @@ const Layout = ({ location, title, children }) => {
           Gatsby
         </a>
         <br />
-        <a className="hover:underline" href="https://www.facundoleites.com">
+        <a
+          className="inline-block hover:underline"
+          href="https://www.facundoleites.com"
+        >
           facundoleites.com
         </a>{" "}
         <a
-          className="hover:underline"
+          className="inline-block hover:underline"
           href="https://instagram.com/leitesfacundo"
         >
           ig: @leitesfacundo
         </a>{" "}
-        <a className="hover:underline" href="https://twitter.com/FacundoLeites">
+        <a
+          className="inline-block hover:underline"
+          href="https://twitter.com/FacundoLeites"
+        >
           tw: @facundoleites
         </a>
       </footer>

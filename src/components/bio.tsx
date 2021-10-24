@@ -34,16 +34,16 @@ const Bio: React.FC<{ lang: "es" | "pt" }> = ({ lang }) => {
     <div className="bio flex items-center py-8 text-gray-600 dark:text-gray-400">
       <StaticImage
         className="rounded-full"
+        height={50}
+        width={50}
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile.jpg"
-        width={50}
-        height={50}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
-        <p className="ml-4">
+        <p className="ml-4 flex-1">
           por <strong>{author.name}</strong>{" "}
           {lang === "es" ? author?.summary || null : author?.summary_pt || null}
         </p>
