@@ -4,7 +4,7 @@ date: "2021-10-22"
 lang: "es"
 ---
 
-Me viste como um sol\
+Me viste como un sol\
 me hiciste brillar\
 y me abrazaste\
 cuando me apagaba\
